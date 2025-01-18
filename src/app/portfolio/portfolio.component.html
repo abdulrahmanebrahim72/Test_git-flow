@@ -1,0 +1,73 @@
+<section class="portfolio py-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="my-2 py-2 fs-1 fw-bold text-center mColor">PORTFOLIO COMPONENT</h2>
+            <div class="icon mx-auto position-relative"><i class="fa fa-star my-2"></i></div>
+
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <figure (click)="showLayer('../../assets/imgs/poert1.png');" class="rounded-2 position-relative overflow-hidden">
+                        <img class="w-100 rounded-2" src="../../assets/imgs/poert1.png" alt="">
+    
+                        <figcaption class="position-absolute start-0 end-0 bottom-0 top-0 d-flex justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-plus fa-6x"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 p-3">
+                    <figure (click)="showLayer('../../assets/imgs/port2.png');" class="rounded-2 position-relative overflow-hidden">
+                        <img class="w-100 rounded-2" src="../../assets/imgs/port2.png" alt="">
+    
+                        <figcaption class="position-absolute start-0 end-0 bottom-0 top-0 d-flex justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-plus fa-6x"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 p-3">
+                    <figure (click)="showLayer('../../assets/imgs/port3.png');" class="rounded-2 position-relative overflow-hidden">
+                        <img class="w-100 rounded-2" src="../../assets/imgs/port3.png" alt="">
+    
+                        <figcaption class="position-absolute start-0 end-0 bottom-0 top-0 d-flex justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-plus fa-6x"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 p-3">
+                    <figure (click)="showLayer('../../assets/imgs/poert1.png');" class="rounded-2 position-relative overflow-hidden">
+                        <img class="w-100 rounded-2" src="../../assets/imgs/poert1.png" alt="">
+    
+                        <figcaption class="position-absolute start-0 end-0 bottom-0 top-0 d-flex justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-plus fa-6x"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 p-3">
+                    <figure (click)="showLayer('../../assets/imgs/port2.png');" class="rounded-2 position-relative overflow-hidden">
+                        <img class="w-100 rounded-2" src="../../assets/imgs/port2.png" alt="">
+    
+                        <figcaption class="position-absolute start-0 end-0 bottom-0 top-0 d-flex justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-plus fa-6x"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 p-3">
+                    <figure (click)="showLayer('../../assets/imgs/port3.png');" class="rounded-2 position-relative overflow-hidden">
+                        <img class="w-100 rounded-2" src="../../assets/imgs/port3.png" alt="">
+    
+                        <figcaption class="position-absolute start-0 end-0 bottom-0 top-0 d-flex justify-content-center align-items-center text-white">
+                            <i class="fa-solid fa-plus fa-6x"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div (click)="hideLayer($event)" class="layer d-none bg-dark bg-opacity-75 position-fixed top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+    <img src="../../assets/imgs/poert1.png" alt="">
+</div>
+
+<input [(ngModel)]="TWDB" class="form-control" placeholder="Two way data binding" type="text">
+<h4 class="bg-body-secondary p-4 text-black">{{TWDB}}</h4>
