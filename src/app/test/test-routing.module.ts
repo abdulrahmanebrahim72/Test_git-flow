@@ -5,7 +5,7 @@ import { LazytestComponent } from './lazytest/lazytest.component';
 
 const routes: Routes = 
 [
-  { path: '', redirectTo:'lazytest', pathMatch:'full' },
+  { path: '', component: TestComponent },
   { path: 'lazytest', component: LazytestComponent }
 ];
 
